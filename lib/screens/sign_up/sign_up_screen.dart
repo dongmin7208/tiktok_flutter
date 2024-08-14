@@ -1,17 +1,18 @@
 import 'package:flutter/material.dart';
 import 'package:tiktok_flutter/constants/gaps.dart';
 import 'package:tiktok_flutter/constants/sizes.dart';
+import 'package:tiktok_flutter/screens/login/login_screen.dart';
 
 // meta,apple,google,... login
 class SignUpScreen extends StatelessWidget {
   const SignUpScreen({super.key});
 
   void onLoginTap(BuildContext context) {
-    // Navigator.of(context).push(
-    // MaterialPageRoute(
-    // builder: (context) => const LoginScreen(),
-    // ),
-    // );
+    Navigator.of(context).push(
+      MaterialPageRoute(
+        builder: (context) => const LoginScreen(),
+      ),
+    );
   }
 
   @override
